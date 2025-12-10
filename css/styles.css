@@ -72,10 +72,15 @@
 
 .foto_mapa {
     height: 350px;
-    background: url("../img/header-map.jpg") center/cover no-repeat;
+    background: url("") center/cover no-repeat;
     position: relative;
     color: white;
     display: flex;
     align-items: flex-end;
     padding: 3rem;
 }
+
+    .foto_mapa * {
+        position: relative;
+        z-index: 2;
+    }
