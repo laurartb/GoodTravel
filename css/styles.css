@@ -1,0 +1,10 @@
+:root {
+    --negro: #111;
+    --gris: #cccccc;
+    --grisSuave: #e6e6e6;
+    --borde: #d0d0d0;
+    --fondoHero: rgba(0,0,0,0.55);
+    --transicion: 0.5s ease;
+    --radio: 18px;
+    --fuente: "Times New Roman", serif;
+}
