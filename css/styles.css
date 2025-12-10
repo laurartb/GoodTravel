@@ -27,3 +27,24 @@
     top: 0;
     z-index: 10;
 }
+
+        .nav-logo {
+            font-weight: bold;
+        }
+
+        .nav-hamburguesa {
+            font-size: 1.8rem;
+            cursor: pointer;
+            display: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--negro);
+        }
