@@ -1,74 +1,19 @@
 :root {
-    --negro: #111;
-    --gris: #cccccc;
-    --grisSuave: #e6e6e6;
-    --borde: #d0d0d0;
-    --fondoHero: rgba(0,0,0,0.55);
-    --transicion: 0.5s ease;
-    --radio: 18px;
-    --fuente: "Times New Roman", serif;
+    --color-primario: #004080;
+    --color-secundario: #0080ff;
+    --color-fondo: #f0f8ff;
+    --color-texto: #333333;
+    --color-acento: #ff6600;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--fuente);
-}
-
-
-/* menu nav y hamburguesa con media queries*/
-.nav {
+.portada {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background: white;
-    padding: 1rem 1.5rem;
-    border-bottom: 1px solid var(--gris);
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    height: 100vh;
 }
 
-        .nav-logo {
-            font-weight: bold;
-        }
 
-        .nav-hamburguesa {
-            font-size: 1.8rem;
-            cursor: pointer;
-            display: none;
-        }
 
-        .nav-menu {
-            display: flex;
-            gap: 1.5rem;
-            list-style: none;
-        }
-
-        .nav-menu a {
-            text-decoration: none;
-            color: var(--negro);
-        }
-
-@media (max-width: 800px) {
-    .nav-hamburguesa { display: block; }
-
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        background: white;
-        border-bottom: 1px solid var(--gris);
-        width: 100%;
-        padding: 1rem;
-        margin-top: 1rem;
-    }
-
-    .nav-menu.show {
-        display: flex;
-    }
-}
-
+/*carrusel fondo principal*/
 
 .carrusel-container {
     width: 100%;
@@ -78,8 +23,6 @@
     align-items: center;
 }
 
-
-/*carrusel fondo principal*/
 .fondo-carrusel {
     position: center;
     inset: 0;
@@ -102,4 +45,45 @@
 
 .fondo-carrusel .slide.active {
     opacity: 1;
+}
+
+
+/*fondo de todos los div*/
+
+.fondo {
+    background-color: var(--color-fondo);
+    width: 80%;
+    position: center;
+    padding: 40px 40px;
+    margin: 10px auto 40px auto;
+    border-radius: 20px;
+}
+
+
+/*estilo del texto dentro del div*/
+.fondo h2 {
+    color: var(--color-primario);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.fondo p {
+    color: var(--color-texto);
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.fondo p strong {
+    color: var(--color-acento);
+}
+.fondo p em {
+    font-style: italic;
+    color: var(--color-secundario);
+}
+.fondo p a {
+    color: var(--color-primario);
+    text-decoration: none;
+}
+.fondo p a:hover {
+    text-decoration: underline;
 }
