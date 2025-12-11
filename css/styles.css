@@ -70,22 +70,36 @@
 }
 
 
-.foto_mapa {
-    height: 350px;
-    background: url("") center/cover no-repeat;
-    position: relative;
-    color: white;
+.carrusel-container {
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-items: flex-end;
-    padding: 3rem;
+    justify-content: center;
+    align-items: center;
 }
 
-    .foto_mapa * {
-        position: relative;
-        z-index: 2;
-    }
 
-    .foto_mapa h1 {
-    font-size: 5rem;
+/*carrusel fondo principal*/
+.fondo-carrusel {
+    position: center;
+    inset: 0;
+    width: 60%;
+    max-height: 60vh;
+    overflow: hidden;
+    z-index: -1;
+    ;
 }
 
+.fondo-carrusel .slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.8s ease;
+}
+
+.fondo-carrusel .slide.active {
+    opacity: 1;
+}
