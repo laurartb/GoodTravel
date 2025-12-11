@@ -89,3 +89,29 @@
     text-align: justify;
 }
 
+
+.card-destacado {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.card-destacado figure img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.card-destacado .texto {
+    flex: 1;
+}
+
+
+
+/*fotos de los lugares*/
+.figure {
+    width: 100%;
+    height: auto;
+}
