@@ -84,3 +84,8 @@
         position: relative;
         z-index: 2;
     }
+
+    .foto_mapa h1 {
+    font-size: 5rem;
+}
+
