@@ -11,6 +11,21 @@
     height: 100vh;
 }
 
+.header-title {
+    color: var(--color-primario);
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 0%;
+    font-size: 100px;
+}
+.header-subtitle {
+    color: var(--color-secundario);
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 0%;
+    font-size: 30px;
+}
+
 
 
 /*carrusel fondo principal*/
@@ -60,7 +75,8 @@
 }
 
 
-/*estilo del texto dentro del div*/
+/*textos del div de fondo*/
+
 .fondo h2 {
     color: var(--color-primario);
     text-align: center;
@@ -69,21 +85,7 @@
 .fondo p {
     color: var(--color-texto);
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.3;
     text-align: justify;
 }
 
-.fondo p strong {
-    color: var(--color-acento);
-}
-.fondo p em {
-    font-style: italic;
-    color: var(--color-secundario);
-}
-.fondo p a {
-    color: var(--color-primario);
-    text-decoration: none;
-}
-.fondo p a:hover {
-    text-decoration: underline;
-}
