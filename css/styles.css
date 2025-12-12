@@ -140,6 +140,39 @@ body {
     cursor: pointer;
 }
 
+#menu-toggle {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: var(--color-primario);
+    color: white;
+    width: 40px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Estilo del menú de navegación */
+#menu {
+    display: none;
+    background-color: var(--color-primario);
+    padding: 10px;
+    width: 200px;
+}
+
+#menu a {
+    display: block;
+    padding: 8px;
+    color: var(--color-fondo);
+}
+
+#menu a:hover {
+    background-color: var(--color-acento);
+}
+
+
+.show {
+    display: block !important;
+}
 
 
 
@@ -364,42 +397,80 @@ body {
 }
 
 
-@media (max-width: 768px) {
+/* Desktop */
+.menu {
+    display: flex;
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li {
+    position: relative;
+}
+.menu ul li ul {
+    display: none; /* submenú oculto por defecto */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-secundario);
+}
 
+/* Hamburguesa solo móvil */
+.hamburguesa {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: var(--color-fondo);
+    background: none;
+    border: none;
+}
+
+/* Móvil */
+@media (max-width: 768px) {
     .hamburguesa {
         display: block;
     }
 
+    /* ocultar menú principal */
     .menu {
         display: none;
+        flex-direction: column;
         width: 100%;
+        background-color: var(--color-primario);
     }
-
     .menu.activo {
-        display: block;
+        display: flex;
     }
 
     .menu ul {
         flex-direction: column;
-        width: 100%;
         padding: 0;
     }
 
-    .menu ul li {
-        width: 100%;
-        margin-left: 0;
-    }
-
     .menu ul li a {
-        padding: 12px 0;
+        display: block;
+        padding: 12px 15px;
+        color: var(--color-fondo);
+        text-decoration: none;
         border-bottom: 1px solid rgba(255,255,255,0.2);
     }
 
+    /* Submenú oculto */
     .menu ul li ul {
-        position: static;
-        background: var(--color-primario);
+        display: none;
+        flex-direction: column;
+        padding-left: 15px;
+        background-color: var(--color-secundario);
+    }
+
+    .menu ul li ul.activo {
+        display: flex;
     }
 }
+
 
 
 
@@ -433,19 +504,6 @@ body {
 /* Móviles*/
 @media (max-width: 768px) {
 
-    .barra-navegacion {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .barra-navegacion .menu ul {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .barra-navegacion .menu ul li {
-        margin-left: 0;
-    }
 
     .header-title { font-size: 40px; margin-left: 10px; }
 

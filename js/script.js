@@ -5,25 +5,37 @@ document.addEventListener("DOMContentLoaded", function () {
     let index = 0;
 
     function cambiarImagen() {
-        // quita clase active de todas
         slides.forEach(slide => slide.classList.remove("active"));
 
-        // iguiente imagen
         slides[index].classList.add("active");
 
-        // siguiente índice
         index = (index + 1) % slides.length;
     }
 
     // empieza la 1 imagen
     cambiarImagen();
-
     // cambia cada 4 seg
     setInterval(cambiarImagen, 4000);
 });
 
 
+
+
 // menú hamburguesa
-document.getElementById("hamburguesa").addEventListener("click", function() {
-document.getElementById("menu").classList.toggle("activo");
+
+$(document).ready(function() {
+    const $menuToggle = $('#menu-toggle');
+    const $menu = $('#menu');
+
+    $menuToggle.click(function() {
+        $menu.toggleClass('show');
+
+        if ($menu.hasClass('show')) {
+            $menuToggle.text('✕');
+        } else {
+            $menuToggle.text('☰');
+        }
+    });
 });
+
+    
