@@ -10,51 +10,53 @@
 </head>
 
 <body>
-    <nav class="nav">
-    <div class="nav-logo">GTW</div>
-    <div class="nav-hamburguesa">&#9776;</div>
-        <ul class="nav-menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="info.html">Información</a></li>
-        </ul>
+    <nav class="barra-navegacion">
+        <div class="logo">GTW</div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a><ul>
+                        <li><a href="index.html#intro">Sobre Londres</a></li>
+                        <li><a href="index.html#lugares">Lugares</a></li>
+                        <li><a href="index.html#clima">Clima</a></li>
+                        <li><a href="index.html#mapa">Mapa</a></li>
+                    </ul>
+                </li>
+                <li><a href="info.html">Experiencias</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <section class="info">
-        <h2>Climatología de Londres</h2>
-        <canvas id="clima"></canvas>
-    </section>
-
     <section class="experiencias">
-    <h3>Descubre algunas de nuestras experiencias mejor valoradas:</h3>
-        <div class="carousel">
-            <input type="radio" id="c1" name="slider" checked>
-            <input type="radio" id="c2" name="slider">
-            <input type="radio" id="c3" name="slider">
+        <div class="fondo">
+            <h2>Experiencias en Londres</h2>
+            <p>Explora las mejores actividades y tours que Londres tiene para ofrecer. Desde visitas guiadas por monumentos históricos hasta experiencias culturales únicas, descubre cómo aprovechar al máximo tu visita a esta vibrante ciudad.</p>
+            <h3>Descubre algunas de nuestras experiencias mejor valoradas:</h3>
+                
+            <div class="carousel">
+                <input type="radio" id="c1" name="slider" checked>
+                <input type="radio" id="c2" name="slider">
+                <input type="radio" id="c3" name="slider">
 
-            <div class="slides">
-                <div class="card">
-                    <img src="img/foto1" alt="">
-                    <h4>Tower of London</h4>
-                    <p>Duración de 2h.<br>18€/pers.</p>
-                    <button>Más info.</button>
+                <div class="slides">
+                    <div class="card">
+                        <img src="img/foto1" alt="">
+                        <h4>Tower of London</h4>
+                        <p>Duración de 2h.<br>18€/pers.</p>
+                        <button>Más info.</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/foto2" alt="">
+                        <h4>Tower of London</h4>
+                        <p>Duración de 2h.<br>18€/pers..</p>
+                        <button>Más info.</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/foto3" alt="">
+                        <h4>Tower of London</h4>
+                        <p>Duración de 2h.<br>18€/pers.</p>
+                        <button>Más info.</button>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="img/foto2" alt="">
-                    <h4>Tower of London</h4>
-                    <p>Duración de 2h.<br>18€/pers..</p>
-                    <button>Más info.</button>
-                </div>
-                <div class="card">
-                    <img src="img/foto3" alt="">
-                    <h4>Tower of London</h4>
-                    <p>Duración de 2h.<br>18€/pers.</p>
-                    <button>Más info.</button>
-                </div>
-            </div>
-            <div class="puntos">
-                <label for="c1"></label>
-                <label for="c2"></label>
-                <label for="c3"></label>
             </div>
         </div>
     </section>
