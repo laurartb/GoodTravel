@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/script.js" defer></script>
+    <script src="js/clima.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,7 +90,7 @@
             <div class="lugares-destacados">
                 <div class="card-destacado">
                     <figure>
-                        <img src="assets/img/big-ben-westminster-bridge-sunset-london-uk.jpg" alt="London Eye al atardecer">
+                        <img src="assets/img/big-ben.jpg" alt="Big Ben">
                     </figure>
                     <div class="texto-lugar">
                         <h3>Big Ben</h3>
@@ -101,12 +103,12 @@
                     <p>El London Bridge es uno de los puentes más antiguos y emblemáticos de la ciudad, con una historia que se remonta a la época romana. La versión actual fue inaugurada en 1973, construida en hormigón y acero para reemplazar a la anterior, que se había quedado obsoleta. Una curiosidad famosa es que el viejo puente fue vendido piedra por piedra en 1968 a un empresario estadounidense, quien lo reconstruyó en Arizona, creyendo muchos que había comprado el más icónico Tower Bridge. Aunque su diseño es sencillo, el London Bridge es un punto clave de conexión entre la City y Southwark, y ofrece bonitas vistas al río Támesis y al skyline moderno.</p>
                     </div>
                     <figure>
-                        <img src="assets/img/famous-tower-bridge-evening-london-england.jpg" alt="London Tower">
+                        <img src="assets/img/tower-bridge-london-uk.jpg" alt="London">
                     </figure>
                 </div>
                 <div class="card-destacado">
                     <figure>
-                        <img src="assets/img/big-ben-westminster-bridge-sunset-london-uk.jpg" alt="London Eye al atardecer">
+                        <img src="assets/img/gavin-allanwood-18-ui7G2MNc-unsplash.jpg" alt="La Torre de Londres">
                     </figure>
                     <div class="texto-lugar">
                     <h3>La Torre de Londres</h3>
@@ -119,7 +121,7 @@
                     <p>La Catedral de San Pablo (St. Paul’s Cathedral) es uno de los monumentos más emblemáticos de Londres y un símbolo de la resiliencia de la ciudad. La estructura actual, diseñada por Sir Christopher Wren tras el Gran Incendio de Londres de 1666, se completó en 1710. Su cúpula de 111 metros de altura es una de las más grandes del mundo y se ha convertido en un icono del skyline londinense. La catedral ha sido escenario de importantes eventos históricos, como el funeral de Winston Churchill y la boda del príncipe Carlos y Lady Diana. Entre sus curiosidades, destaca la famosa “Whispering Gallery”, una galería donde un susurro en un extremo puede escucharse claramente al otro lado gracias a su acústica especial. Además, alberga impresionantes obras de arte, monumentos conmemorativos y tumbas de personajes históricos británicos.</p>
                     </div>
                     <figure>
-                        <img src="assets/img/famous-tower-bridge-evening-london-england.jpg" alt="London Eye al atardecer">
+                        <img src="assets/img/stefan-suner-7znHVVgJzIU-unsplash.jpg" alt="La Catedral de San Pablo">
                     </figure>
                 </div>
             </div>
@@ -128,9 +130,9 @@
 
     <section class="grafico" id="clima">
         <div class="fondo">
-            <h2>Información útil</h2>
+            <h2>Clima</h2>
             <div class="contenido-grafico">
-                /* meter graficos */
+                <canvas id="climaChart"></canvas>
             </div>
         </div>
     </section>
