@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// menú hamburguesa
+// menú hamburguesa con jquery
 
 $(document).ready(function() {
     const $menuToggle = $('#menu-toggle');
