@@ -7,23 +7,41 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="js/script.js" defer></script>   
+    <script src="js/script.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <nav class="barra-navegacion">
         <div class="logo">GTW</div>
-        <ul class="nav-menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="info.html">Guías</a></li>
-            <li><a href="#">Experiencias</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
+        <div class="menu">
+            <ul>
+                <li>Home
+                    <ul>
+                        <li><a href="#intro">Sobre Londres</a></li>
+                        <li><a href="#lugares">Lugares</a></li>
+                        <li><a href="#clima">Clima</a></li>
+                        <li><a href="#mapa">Mapa</a></li>
+                    </ul>
+                </li>
+                <li>Experiencias
+                    <ul>
+                        <li>Branding</li>
+                        <li>UX para el Diseño de Productos y Servicios Digitales</li>
+                        <li>Diseño gráfico</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </nav>
     <section class="portada">
         <header class="header">
-            <h1 class="header-title">Londres</h1>
-            <h4 class="header-subtitle">La ciudad del Big Ben</h4>
+            <h1 class="header-title"></h1>
+            <h4 class="header-subtitle"></h4>
         </header>
 
         <div class="carrusel-container">
@@ -37,12 +55,12 @@
         </div>
     </section>
 
-    <section class="intro">
+    <section class="intro" id="intro">
         <div class="fondo">
             <div class="textos_introduccción">
                 <div class="texto">
                     <h2>Bienvenido a Londres</h2>
-                    <h4>Londres es una de esas ciudades capaces de cautivar desde el primer instante. Vibrante, diversa y siempre en movimiento, la capital británica combina como pocas historia, modernidad y una oferta cultural imposible de abarcar en un solo viaje. Pasear por sus calles es descubrir un mosaico de culturas que conviven de forma natural, creando un ambiente único donde cada rincón cuenta una historia distinta. Desde sus icónicos monumentos hasta sus pintorescos barrios, Londres sorprende por su energía inagotable y su inconfundible personalidad.</h4>
+                    <p>Londres es una de esas ciudades capaces de cautivar desde el primer instante. Vibrante, diversa y siempre en movimiento, la capital británica combina como pocas historia, modernidad y una oferta cultural imposible de abarcar en un solo viaje. Pasear por sus calles es descubrir un mosaico de culturas que conviven de forma natural, creando un ambiente único donde cada rincón cuenta una historia distinta. Desde sus icónicos monumentos hasta sus pintorescos barrios, Londres sorprende por su energía inagotable y su inconfundible personalidad.</p>
                 </div>
                 <div class="texto">
                     <p>
@@ -64,7 +82,7 @@
         </div>
     </section>
 
-    <section class="destacados">
+    <section class="destacados" id="lugares">
         <div class="fondo">
             <h2>Lugares destacados</h2>
             <div class="lugares-destacados">
@@ -108,7 +126,7 @@
         </div>
     </section>
 
-    <section class="grafico">
+    <section class="grafico" id="clima">
         <div class="fondo">
             <h2>Información útil</h2>
             <div class="contenido-grafico">
@@ -117,7 +135,7 @@
         </div>
     </section>
 
-    <section class="contacto">
+    <section class="contacto" id="mapa">
         <div class="fondo">
         <h2>Explora tú mismo la ciudad</h2>
         <div class="mapa">

@@ -4,7 +4,27 @@
     --color-fondo: #f0f8ff;
     --color-texto: #333333;
     --color-acento: #ff6600;
+    --family-principal: 'Raleway', sans-serif;
+    --family-secundaria: 'Lato', sans-serif;
 }
+
+
+
+.raleway-regular {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/*estilos de la portada*/
+
 
 .portada {
     width: 100%;
@@ -12,6 +32,7 @@
 }
 
 .header-title {
+    font-family: var(--family-principal);
     color: var(--color-primario);
     text-align: left;
     margin-left: 20px;
@@ -19,12 +40,81 @@
     font-size: 100px;
 }
 .header-subtitle {
+    font-family: var(--family-secundaria);
     color: var(--color-secundario);
     text-align: left;
     margin-left: 20px;
     margin-top: 0%;
     font-size: 30px;
 }
+
+
+/*barra de navegacion*/
+
+.barra-navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primario);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.barra-navegacion .logo {
+    font-family: var(--family-principal);
+    color: var(--color-fondo);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.barra-navegacion .menu {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.barra-navegacion .menu ul {
+    font-family: var(--family-secundaria);
+    color: var(--color-fondo);
+    font-size: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.barra-navegacion .menu ul li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.barra-navegacion .menu ul li a {
+    color: var(--color-fondo);
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+}
+
+.barra-navegacion .menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-texto);
+    padding: 0;
+    min-width: 180px;
+}
+
+.barra-navegacion .menu ul li ul li {
+    margin: 0;
+}
+
+.barra-navegacion .menu ul li:hover ul {
+    display: block;
+}
+
 
 
 
@@ -78,17 +168,28 @@
 /*textos del div de fondo*/
 
 .fondo h2 {
+    font-family: var(--family-principal);
     color: var(--color-primario);
     text-align: center;
     margin-bottom: 20px;
 }
 .fondo p {
+    font-family: var(--family-secundaria);
     color: var(--color-texto);
     font-size: 18px;
     line-height: 1.6;
     text-align: justify;
 }
 
+.fondo h4 {
+    font-family: var(--family-secundaria);
+    color: var(--color-texto);
+    text-align: justify;
+    margin-bottom: 20px;
+    line-height: 1.6;
+} 
+
+/*cards de los lugares destacados*/
 
 .card-destacado {
     display: flex;
