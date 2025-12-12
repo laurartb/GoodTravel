@@ -1,13 +1,13 @@
 :root {
-    --color-primario: #004080;
-    --color-secundario: #0080ff;
-    --color-fondo: #f0f8ff;
+     --color-primario: #1a1a1a;
+    --color-secundario: #d62828;
+    --color-fondo: #f5f5f5;
     --color-texto: #333333;
-    --color-acento: #ff6600;
+    --color-sombras: #706e6e;
+    --color-acento: #d62828;
     --family-principal: 'Raleway', sans-serif;
     --family-secundaria: 'Lato', sans-serif;
 }
-
 
 
 .raleway-regular {
@@ -22,6 +22,18 @@
   font-weight: 100;
   font-style: normal;
 }
+
+
+
+body {
+    background-image: url('../assets/fondotextura.jpg');
+    background-size:cover;
+    background-position: center;
+    padding: 0;
+}
+
+
+
 
 /*estilos de la portada*/
 
@@ -59,7 +71,7 @@
     padding: 10px 20px;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    box-shadow: 0 4px 6px var(--color-sombras);
 }
 
 .barra-navegacion .logo {
@@ -97,6 +109,12 @@
     display: block;
 }
 
+.barra-navegacion .menu ul li a:hover {
+    background-color: var(--color-secundario);
+    border-radius: 5px;
+    transition: 0.3s; 
+}
+
 .barra-navegacion .menu ul li ul {
     display: none;
     position: absolute;
@@ -119,6 +137,11 @@
 
 
 /*carrusel fondo principal*/
+
+.fondoblanco {
+    background-color: var(--color-fondo);
+    z-index: -2;
+}
 
 .carrusel-container {
     width: 100%;
@@ -159,19 +182,34 @@
     background-color: var(--color-fondo);
     width: 80%;
     position: center;
-    padding: 40px 40px;
+    padding: 50px 50px;
     margin: 10px auto 40px auto;
     border-radius: 20px;
+    box-shadow: 0 8px 15px var(--color-sombras);
 }
 
 
 /*textos del div de fondo*/
 
+.fondo h1 {
+    font-family: var(--family-principal);
+    color: var(--color-primario);
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-texto);
+}
+
 .fondo h2 {
     font-family: var(--family-principal);
     color: var(--color-primario);
     text-align: center;
+    font-size: 32px;
     margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .fondo p {
     font-family: var(--family-secundaria);
@@ -205,7 +243,11 @@
     object-fit: cover;
 }
 
-
+.card-destacado h3 {
+    font-family: var(--family-principal);
+    color: var(--color-acento);
+    margin-bottom: 10px;
+}
 
 /*fotos de los lugares*/
 .figure {
@@ -218,4 +260,194 @@
     height: 450px;
     border: none;
     border-radius: 10px;
+}
+
+
+
+
+
+.footer {
+    background-color: var(--color-primario);
+    color: var(--color-fondo);
+    text-align: center;
+    padding: 20px;
+    font-family: var(--family-secundaria);
+    box-shadow: 0 -4px 6px var(--color-sombras);
+}
+
+
+
+
+/*galeria de segunda pag html*/
+
+.galeria {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.galeria h2 {
+    font-family: var(--family-principal);
+    margin-bottom: 30px;
+    color: var(--color-primario);
+}
+
+.grid-cartas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+.carta {
+    background: var(--color-fondo);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.carta figure img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+/*texto de cartas de la galeria*/
+
+.carta p {
+    font-family: var(--family-secundaria);
+    font-size: 14px;
+    color: var(--color-texto);
+}
+
+.carta button {
+    background: var(--color-secundario);
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: var(--family-secundaria);
+}
+
+.carta button:hover {
+    background: #b51f1f;
+}
+
+
+
+
+/*media queries responsive el grid*/
+
+@media (max-width: 900px) {
+    .grid-cartas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-cartas {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*responsive */
+
+
+
+/* Tablets*/
+@media (max-width: 992px) {
+
+    .fondo {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .header-title { font-size: 60px; }
+
+    .header-subtitle { font-size: 22px; }
+
+    .fondo-carrusel { width: 80%; max-height: 50vh; }
+
+    .barra-navegacion .menu { width: auto; }
+
+    .card-destacado { gap: 1rem; }
+    
+    .card-destacado figure img { width: 220px; }
+}
+
+
+/* Móviles*/
+@media (max-width: 768px) {
+
+    .barra-navegacion {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .barra-navegacion .menu ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .barra-navegacion .menu ul li {
+        margin-left: 0;
+    }
+
+    .header-title { font-size: 40px; margin-left: 10px; }
+
+    .header-subtitle { font-size: 18px; margin-left: 10px; }
+
+    .fondo-carrusel { width: 90%; max-height: 40vh; }
+
+    .textos_introduccción .texto {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card-destacado {
+        flex-direction: column;
+        text-align: center;
+    }
+    .card-destacado figure img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .mapa iframe {
+        height: 300px;
+    }
+}
+
+
+/* Móviles pequeños*/
+@media (max-width: 480px) {
+
+    .fondo h1,
+    .fondo h2 {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+
+    .fondo p { font-size: 16px; }
+
+    .header-title { font-size: 32px; }
+
+    .header-subtitle { font-size: 16px; }
+
+    .fondo-carrusel { width: 95%; max-height: 35vh; }
+
+    .carta { padding: 10px; }
+
+    .carta figure img { height: 150px; }
+
+    canvas { max-height: 240px; }
+
+    .footer { font-size: 14px; }
 }

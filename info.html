@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -15,75 +15,141 @@
 </head>
 
 <body>
-    <nav class="barra-navegacion">
-        <div class="logo">GTW</div>
-        <div class="menu">
-            <ul>
-                <li><a href="index.html">Inicio</a><ul>
-                        <li><a href="index.html#intro">Sobre Londres</a></li>
-                        <li><a href="index.html#lugares">Lugares</a></li>
-                        <li><a href="index.html#clima">Clima</a></li>
-                        <li><a href="index.html#mapa">Mapa</a></li>
-                    </ul>
-                </li>
-                <li><a href="info.html">Experiencias</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <section class="experiencias">
-        <div class="fondo">
-            <h2>Experiencias en Londres</h2>
-            <p>Explora las mejores actividades y tours que Londres tiene para ofrecer. Desde visitas guiadas por monumentos históricos hasta experiencias culturales únicas, descubre cómo aprovechar al máximo tu visita a esta vibrante ciudad.</p>
-            <h3>Descubre algunas de nuestras experiencias mejor valoradas:</h3>
-                
-            <div class="carousel">
-                <input type="radio" id="c1" name="slider" checked>
-                <input type="radio" id="c2" name="slider">
-                <input type="radio" id="c3" name="slider">
-
-                <div class="slides">
-                    <div class="card">
-                        <img src="img/foto1" alt="">
-                        <h4>Tower of London</h4>
-                        <p>Duración de 2h.<br>18€/pers.</p>
-                        <button>Más info.</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/foto2" alt="">
-                        <h4>Tower of London</h4>
-                        <p>Duración de 2h.<br>18€/pers..</p>
-                        <button>Más info.</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/foto3" alt="">
-                        <h4>Tower of London</h4>
-                        <p>Duración de 2h.<br>18€/pers.</p>
-                        <button>Más info.</button>
-                    </div>
-                </div>
+        <nav class="barra-navegacion">
+            <div class="logo">GTW</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a><ul>
+                            <li><a href="index.html#intro">Sobre Londres</a></li>
+                            <li><a href="index.html#lugares">Lugares</a></li>
+                            <li><a href="index.html#clima">Clima</a></li>
+                            <li><a href="index.html#mapa">Mapa</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="info.html">Experiencias</a></li>
+                </ul>
             </div>
-        </div>
+        </nav>
+        
+        <section class="experiencias">
+            <div class="fondo">
+                <h2>Experiencias en Londres</h2>
+                <p>Explora las mejores actividades y tours que Londres tiene para ofrecer. Desde visitas guiadas por monumentos históricos hasta experiencias culturales únicas, descubre cómo aprovechar al máximo tu visita a esta vibrante ciudad.</p>
+                <h4>Descubre algunas de nuestras experiencias mejor valoradas:</h4>
+                    
+                <section class="galeria">
+
+                    <div class="grid-cartas">
+
+                        <div class="carta">
+                            <figure>
+                                <img src="assets/tarjetas/abadiawestminster.jpg" alt="Lugar 1">
+                            </figure>
+                            <h4>Abadía de Westminster</h4>
+                            <p>30€/pers.</p>
+                            <button>Más Información</button>
+                        </div>
+
+                        <div class="carta">
+                            <figure>
+                                <img src="assets/tarjetas/london_eye.jpg" alt="Lugar 2">
+                            </figure>
+                            <h4>Entradas para el London Eye</h4>
+                            <p>44€/pers.</p>
+                            <button>Más Información</button>
+                        </div>
+
+                        <div class="carta">
+                            <figure>
+                                <img src="assets/tarjetas/oxfordcastle.jpg" alt="Lugar 3">
+                            </figure>
+                            <h4>Excursión al Castillo de Oxford</h4>
+                            <p>50€/pers.</p>
+                            <button>Más Información</button>
+                        </div>
+
+                        <div class="carta">
+                            <figure>
+                                <img src="assets/tarjetas/hpstudios.jpg" alt="Lugar 4">
+                            </figure>
+                            <h4>Harry Potter Studios</h4>
+                            <p>100€/pers.</p>
+                            <button>Más Información</button>
+                        </div>
+
+                        <div class="carta">
+                            <figure>
+                                <img src="assets/tarjetas/palacio.jpg" alt="Lugar 5">
+                            </figure>
+                            <h4>Palacio de Buckingham</h4>
+                            <p>50€/pers.</p>
+                            <button>Más Información</button>
+                        </div>
+
+                        <div class="carta">
+                            <figure>
+                                <img src="assets/tarjetas/museo.jpg" alt="Lugar 6">
+                            </figure>
+                            <h4>Entradas Museo Británico</h4>
+                            <p>15€/pers.</p>
+                            <button>Más Información</button>
+                        </div>
+
+                        <div class="carta">
+                            <figure>
+                                <img src="assets/tarjetas/puentedelondres.jpg" alt="Lugar 7">
+                            </figure>
+                            <h4>Puente de Londres</h4>
+                            <p>10€/pers.</p>
+                            <button>Más Información</button>
+                        </div>
+
+                        <div class="carta">
+                            <figure>
+                                <img src="assets/tarjetas/picadillly.jpg" alt="Lugar 8">
+                            </figure>
+                            <h4>Free Tour por Londres</h4>
+                            <p>Gratis</p>
+                            <button>Más Información</button>
+                        </div>
+
+                        <div class="carta">
+                            <figure>
+                                <img src="assets/tarjetas/to¡rredelondres.jpg" alt="Lugar 9">
+                            </figure>
+                            <h4>Entradas Torre de Londres</h4>
+                            <p>28,97€/pers.</p>
+                            <button>Más Información</button>
+                        </div>
+
+                    </div>
+
     </section>
+            </div>
+        </section>
 
 
-    <section class="contact">
-    <p>
-        Si no te puedes decidir entre todo, no tienes tiempo para organizar tu viaje o
-        simplemente deseas por dónde empezar, ¡nosotros te ayudamos!
-        <br><br>
-        En GoodTravelWorld nos encargamos de todo: te organizamos un viaje totalmente
-        personalizado y adaptado a tus necesidades y gustos. Envíanos un mensaje para que
-        podamos ayudarte con los requisitos. Te responderemos con nuestra propuesta.
-    </p>
-        <form>
-            <input type="email" placeholder="Pon aquí tu email.">
-            <input type="text" placeholder="Pregúntanos lo que quieras!">
-            <button>Enviar</button>
-        </form>
-    </section>
+        <section class="contact">
+            <div class="fondo">
+                <h2>¿Necesitas ayuda para organizar tu viaje?</h2>
+                <p>
+                    Si no te puedes decidir entre todo, no tienes tiempo para organizar tu viaje o
+                    simplemente deseas por dónde empezar, ¡nosotros te ayudamos!
+                    <br><br>
+                    En GoodTravelWorld nos encargamos de todo: te organizamos un viaje totalmente
+                    personalizado y adaptado a tus necesidades y gustos. Envíanos un mensaje para que
+                    podamos ayudarte con los requisitos. Te responderemos con nuestra propuesta.
+                </p>
+                <form>
+                    <input type="email" placeholder="Pon aquí tu email.">
+                    <input type="text" placeholder="Pregúntanos lo que quieras!">
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
 
-    
-
+        <footer class="footer">
+                <p>© 2024 GoodTravelWorld. Todos los derechos reservados.</p>
+        </footer>
 </body>
 </html>
