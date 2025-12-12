@@ -489,10 +489,6 @@ body {
         padding: 30px;
     }
 
-    .header-title { font-size: 60px; }
-
-    .header-subtitle { font-size: 22px; }
-
     .fondo-carrusel { width: 80%; max-height: 50vh; }
 
     .barra-navegacion .menu { width: auto; }
@@ -506,10 +502,6 @@ body {
 /* Móviles*/
 @media (max-width: 768px) {
 
-
-    .header-title { font-size: 40px; margin-left: 10px; }
-
-    .header-subtitle { font-size: 18px; margin-left: 10px; }
 
     .fondo-carrusel { width: 90%; max-height: 40vh; }
 
@@ -544,17 +536,13 @@ body {
 
     .fondo p { font-size: 16px; }
 
-    .header-title { font-size: 32px; }
-
-    .header-subtitle { font-size: 16px; }
-
     .fondo-carrusel { width: 95%; max-height: 35vh; }
 
     .carta { padding: 10px; }
 
     .carta figure img { height: 150px; }
 
-    canvas { max-height: 240px; }
+    .canvas { max-height: 240px; }
 
     .footer { font-size: 14px; }
 }

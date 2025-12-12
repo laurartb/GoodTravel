@@ -31,9 +31,9 @@ $(document).ready(function() {
         $menu.toggleClass('show');
 
         if ($menu.hasClass('show')) {
-            $menuToggle.text('✕');
+            $menuToggle.text('✕'); // Cambia a ícono de cerrar
         } else {
-            $menuToggle.text('☰');
+            $menuToggle.text('☰'); // Cambia a ícono de menú
         }
     });
 });
