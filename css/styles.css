@@ -133,6 +133,13 @@ body {
     display: block;
 }
 
+.hamburguesa {
+    display: none;
+    font-size: 32px;
+    color: var(--color-fondo);
+    cursor: pointer;
+}
+
 
 
 
@@ -357,7 +364,47 @@ body {
 }
 
 
-/*responsive */
+@media (max-width: 768px) {
+
+    .hamburguesa {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        width: 100%;
+    }
+
+    .menu.activo {
+        display: block;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .menu ul li {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .menu ul li a {
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .menu ul li ul {
+        position: static;
+        background: var(--color-primario);
+    }
+}
+
+
+
+
+/*mas responsive */
 
 
 

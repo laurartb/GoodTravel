@@ -21,3 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // cambia cada 4 seg
     setInterval(cambiarImagen, 4000);
 });
+
+
+// menú hamburguesa
+document.getElementById("hamburguesa").addEventListener("click", function() {
+document.getElementById("menu").classList.toggle("activo");
+});
